@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Internet e WEB</title>
+    <link rel="stylesheet" href="main.css">
+    <script>
+        function alegre()
+        {
+            if(document.forms[0].triste.checked){
+                
+                alert("Obrigado, ainda teremos boas surpresas");
+            }
+            else{
+                
+                alert("O professor Paragua agradece o seu feedback...");
+            }
+        }
+    </script>
+</head>
+    
+<body>
+        
+    <form name="theBlues">
+        
+        <input name="triste" type="checkbox">
+        
+        Colocar um x, se você está feliz no curso de Internet e WEB do IC/UFAL
+        
+    </form>
+    
+    <hr>
+    
+    <form name="visit">
+        
+        <input type="button" value="Avaliando feedback ..." onclick="alegre()">
+        
+    </form>
+    
+</body>
+    
+</html>
