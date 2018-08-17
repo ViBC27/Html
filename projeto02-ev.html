@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Nota Final - IW 2018.1</title>
+    
+    <script>
+        
+        function nota(){ 
+            
+            var sem1 = (document.getElementById("glos1").value * 20/100) + (document.getElementById("tar1").value * 80/100);
+            var sem2 = (document.getElementById("glos2").value * 20/100) + (document.getElementById("tar2").value * 80/100);
+            var sem3 = document.getElementById("tar3").value;
+            var sem4 = document.getElementById("tar4").value;
+            var proj = document.getElementById("proj").value;
+
+            var nota1 = (parseInt(sem1) + parseInt(sem2) + parseInt(sem3) + parseInt(sem4)) / 4;
+            var nota2 = parseInt(proj);
+            
+            var mediafinal = (nota1 + nota2)/2;
+            
+            alert("Nota Final: " + mediafinal);
+
+        }
+        
+    </script>
+</head>
+
+<body>
+    
+    <form>
+
+        <h3>Saiba aqui a sua Nota Final em Internet e WEB</h3>
+        1ª Semana: <br />
+
+        1º Glossário: <input type="text" id="glos1" value=""> <br />
+        M. 1ª Tarefa: <input type="text" id="tar1" value=""> <br /> <br />
+
+        2ª Semana: <br />
+
+        2º Glossário: <input type="text" id="glos2" value=""> <br />
+        M. 2ª Tarefa: <input type="text" id="tar2" value=""> <br /> <br />
+
+        3ª Semana: <br />
+
+        M. 3ª Tarefa: <input type="text" id="tar3" value=""> <br /> <br />
+
+        4ª Semana: <br />
+
+        M. 4ª Tarefa: <input type="text" id="tar4" value=""> <br /> <br />
+        
+        Projeto: <input type="text" id="proj" value=""> <br /> <br />
+
+        <input type="button" value="Média!" onclick="nota()">
+
+    </form>
+    
+</body>
+
+</html>
